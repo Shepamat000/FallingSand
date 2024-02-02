@@ -14,7 +14,7 @@ public class Main extends JFrame {
 		view = new View();
 		controller = new Controller(view);
 		
-		this.setTitle("A Falling sand simulation");
+		this.setTitle("A Falling Sand Simulation");
 		this.setVisible(true);
 		this.setFocusable(true);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);

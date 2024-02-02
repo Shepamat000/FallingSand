@@ -18,10 +18,6 @@ public class View extends JPanel {
 				sand[i][j] = new sandParticle(i, j, this);
 			}
 		}
-		
-		for (int i = 0; i < 500/particleSize; i++) {
-				sand[i][0].isActive=true;
-		}
 	}
 
 	public void paint (Graphics g) {

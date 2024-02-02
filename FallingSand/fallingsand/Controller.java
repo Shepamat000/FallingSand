@@ -41,7 +41,7 @@ public class Controller implements MouseListener, MouseMotionListener {
 
 	@Override
 	public void mouseDragged(MouseEvent e) {
-		if (e.getX() > 0 && e.getY() > 0 && e.getX() < 500 && e.getY() < 500) view.sand[e.getX()/view.particleSize][e.getY()/view.particleSize].isActive = true;
+		if (e.getX() > 0 && e.getY() > 0 && e.getX() < 498 && e.getY() < 498) view.sand[e.getX()/view.particleSize][e.getY()/view.particleSize].isActive = true;
 		
 	}
 
