@@ -8,10 +8,11 @@ public class Main extends JFrame {
 	private static final long serialVersionUID = -1701188282740503775L;
 	
 	View view;
+	public static int particleSizeSetting = 3;
 	Controller controller;
 
 	public Main () {
-		view = new View();
+		view = new View(particleSizeSetting);
 		controller = new Controller(view);
 		
 		this.setTitle("A Falling Sand Simulation");
@@ -26,10 +27,12 @@ public class Main extends JFrame {
 	}
 	
 	public static void main (String[] args) {
+		Settings.main(args);
 		Main main = new Main();
 		main.run();
 	}
 	
+	// Thread
 	public void run () {
 		while (true) {
 			try {
