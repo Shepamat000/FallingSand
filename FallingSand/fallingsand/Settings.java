@@ -88,9 +88,6 @@ public class Settings implements ChangeListener, ActionListener {
 		} 
 		
 		settings.frame.dispose();
-		// Return when the button is pressed and the program is no longer open, continuing to the simulation
-		return;
-
 	}
 
 	@Override
